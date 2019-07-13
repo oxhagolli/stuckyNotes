@@ -66,11 +66,19 @@ namespace StuckyNotes
         private void Form1_Load(object sender, EventArgs e)
         {
             textBox1.Text = Properties.Settings.Default.text;
+            textBox1.WordWrap = Properties.Settings.Default.wrap;
+            wordWrapToolStripMenuItem.Checked = Properties.Settings.Default.wrap;
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.text = textBox1.Text;
+        }
+
+        private void WordWrapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.wrap = !Properties.Settings.Default.wrap;
+            textBox1.WordWrap = Properties.Settings.Default.wrap;
         }
     }
 }

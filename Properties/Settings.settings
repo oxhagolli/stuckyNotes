@@ -11,5 +11,8 @@
     <Setting Name="text" Type="System.String" Scope="User">
       <Value Profile="(Default)">Welcome to Stucky Notes</Value>
     </Setting>
+    <Setting Name="wrap" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
