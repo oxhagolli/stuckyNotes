@@ -29,5 +29,16 @@ namespace StuckyNotes
         {
             Properties.Settings.Default.Save();
         }
+
+        private void ResetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reset settings?",
+                "Reset Confirm", MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                Properties.Settings.Default.Reset();
+                Application.Restart();
+            }
+        }
     }
 }
