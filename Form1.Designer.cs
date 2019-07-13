@@ -40,8 +40,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.hideTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wordWrapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.protectTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,7 +126,7 @@
             // textToolStripMenuItem
             // 
             this.textToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hideTextToolStripMenuItem,
+            this.protectTextToolStripMenuItem,
             this.wordWrapToolStripMenuItem});
             this.textToolStripMenuItem.Name = "textToolStripMenuItem";
             this.textToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
@@ -143,24 +143,29 @@
             this.textBox1.MaxLength = 1000000;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBox1.Size = new System.Drawing.Size(382, 325);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
-            // hideTextToolStripMenuItem
-            // 
-            this.hideTextToolStripMenuItem.Name = "hideTextToolStripMenuItem";
-            this.hideTextToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.hideTextToolStripMenuItem.Text = "Hide Text";
-            // 
             // wordWrapToolStripMenuItem
             // 
             this.wordWrapToolStripMenuItem.CheckOnClick = true;
             this.wordWrapToolStripMenuItem.Name = "wordWrapToolStripMenuItem";
+            this.wordWrapToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
             this.wordWrapToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.wordWrapToolStripMenuItem.Text = "Word Wrap";
             this.wordWrapToolStripMenuItem.Click += new System.EventHandler(this.WordWrapToolStripMenuItem_Click);
+            // 
+            // protectTextToolStripMenuItem
+            // 
+            this.protectTextToolStripMenuItem.CheckOnClick = true;
+            this.protectTextToolStripMenuItem.Name = "protectTextToolStripMenuItem";
+            this.protectTextToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.protectTextToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.protectTextToolStripMenuItem.Text = "Protect Text";
+            this.protectTextToolStripMenuItem.Click += new System.EventHandler(this.ProtectTextToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -197,8 +202,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem textToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ToolStripMenuItem hideTextToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wordWrapToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem protectTextToolStripMenuItem;
     }
 }
 

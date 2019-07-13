@@ -70,5 +70,17 @@ namespace StuckyNotes.Properties {
                 this["wrap"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool protect {
+            get {
+                return ((bool)(this["protect"]));
+            }
+            set {
+                this["protect"] = value;
+            }
+        }
     }
 }
