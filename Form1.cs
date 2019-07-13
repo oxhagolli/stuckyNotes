@@ -70,6 +70,8 @@ namespace StuckyNotes
             wordWrapToolStripMenuItem.Checked = Properties.Settings.Default.wrap;
             textBox1.UseSystemPasswordChar = !Properties.Settings.Default.protect;
             protectTextToolStripMenuItem.Checked = Properties.Settings.Default.protect;
+            TopMost = Properties.Settings.Default.always;
+            lockToolStripMenuItem.Checked = Properties.Settings.Default.always;
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -87,6 +89,12 @@ namespace StuckyNotes
         {
             Properties.Settings.Default.protect = !Properties.Settings.Default.protect;
             textBox1.UseSystemPasswordChar = !Properties.Settings.Default.protect;
+        }
+
+        private void LockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.always = !Properties.Settings.Default.always;
+            TopMost = Properties.Settings.Default.always;
         }
     }
 }

@@ -82,5 +82,17 @@ namespace StuckyNotes.Properties {
                 this["protect"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool always {
+            get {
+                return ((bool)(this["always"]));
+            }
+            set {
+                this["always"] = value;
+            }
+        }
     }
 }
