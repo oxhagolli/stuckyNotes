@@ -8,5 +8,8 @@
     <Setting Name="height" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">400</Value>
     </Setting>
+    <Setting Name="text" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Welcome to Stucky Notes</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

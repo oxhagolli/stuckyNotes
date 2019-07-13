@@ -46,5 +46,17 @@ namespace StuckyNotes.Properties {
                 this["height"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Welcome to Stucky Notes")]
+        public string text {
+            get {
+                return ((string)(this["text"]));
+            }
+            set {
+                this["text"] = value;
+            }
+        }
     }
 }

@@ -65,7 +65,12 @@ namespace StuckyNotes
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            textBox1.Text = Properties.Settings.Default.text;
+        }
 
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.text = textBox1.Text;
         }
     }
 }
