@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StuckyNotes", "StuckyNotes.csproj", "{FA3DBEA9-5ABD-4554-B0AB-B18A15FBC2BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA3DBEA9-5ABD-4554-B0AB-B18A15FBC2BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3DBEA9-5ABD-4554-B0AB-B18A15FBC2BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3DBEA9-5ABD-4554-B0AB-B18A15FBC2BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3DBEA9-5ABD-4554-B0AB-B18A15FBC2BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AADF2B7E-03A7-4DD1-AB78-21BCB5DD7954}
+	EndGlobalSection
+EndGlobal
