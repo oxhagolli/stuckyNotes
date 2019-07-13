@@ -11,8 +11,11 @@ namespace StuckyNotes
 {
     public partial class Form1 : Form
     {
-        private static string DonationURL =
+        public static string DonationURL =
             "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LX8ZV8V3PHUX6&source=url";
+
+        public static string Entertainment =
+            "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 
         public Form1()
         {
@@ -52,6 +55,17 @@ namespace StuckyNotes
         private void DonateToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(DonationURL);
+        }
+
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 aboutBox1 = new AboutBox1();
+            aboutBox1.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
